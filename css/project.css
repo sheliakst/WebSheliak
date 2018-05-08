@@ -1,0 +1,102 @@
+
+
+#form{
+     position: static;
+     display: none;
+}
+::-webkit-input-placeholder {
+    text-align: center;
+ }
+ 
+
+#showbtn,#submitgrid,#showfilter,#calculator,#reset {
+    background: rgba(180, 170, 170, 0.233); 
+    /*background-image: linear-gradient(to bottom, #eb94d0, #2079b0);
+*/
+padding:0px;
+height:30px;
+width:150px;
+border-radius: 6px; 
+border:0px;
+}
+#showbtn:hover ,#reset:hower    ,#submitgrid:hover,#showfilter:hover,#calculator:hover{
+    background: #750d0d94;
+      }
+
+
+
+input[type=text] {
+    width:180px;
+    padding: 10px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.151);
+    color:white;
+    border:15px;
+    border-radius: 10px;
+}
+
+
+#catalog{
+    margin:40px;
+}
+
+#grid th,td{ 
+    border-bottom:1px solid black;   
+    border-collapse: collapse;
+    padding: 15px;
+    text-align: center;
+ }
+
+ 
+
+
+ #grid { 
+    color:rgb(196, 178, 178);    
+    width: 50%;
+    text-align:center;
+    margin-left: auto;
+    margin-right:auto;
+ }
+ .deleteBtn {
+    cursor: pointer;
+    color: rgba(145, 25, 25, 0.562);
+}
+
+
+h1{
+    
+    font-size: 30px;
+    font-style: inherit;
+    text-align: center;
+}
+
+#filter{
+    display:none;
+}
+
+
+
+
+
+/*layout*/
+#space1{
+    height:100px;
+}
+#space2{
+    height:100px;
+}
+#space3{
+    height:200px;
+}
+
+footer{
+    padding:20px;
+}
+
+
+hr{
+    margin: 0px 0;
+    border: 1px solid rgba(255, 0, 0, 0.151);
+}
+

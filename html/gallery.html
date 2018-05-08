@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DarkNightAStronomy</title>
+    <link rel='stylesheet' type='text/css' href='../css/style.css'>
+    <link rel='stylesheet' type='text/css' href='../css/gallery.css'>
+
+    <script src='   jquery-3.3.1.js'></script>
+
+    <script src='../javascript/gallery.js'></script>
+    <meta charset='utf-8'>
+    <meta name='author' content='Stamatis Sarris'>
+    <meta name='description' content='Astrophotography star catalogue'>
+    <meta name='keywords' content='Astrohptography,Star Catalogue, Catalaogue'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+</head>
+
+<body class="main">
+    <header>
+        <div class="container">
+            <img src="../photos/sheliak.png" class="logo">
+            <nav>
+                <ul>
+                    <li>
+                        <a href='../index.html'>Home</a>
+                    </li>
+                    <li>
+                        <a href='gallery.html'>Gallery</a>
+                    </li>
+                    <li>
+                        <a href='projects.html'>Projects</a>
+                    </li>
+                    <li>
+                        <a href='about.html'>About</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+    <section>
+        <!-- Images used to open the lightbox -->
+        <div class="row">
+            <div class="column">
+                <img src="../Photos/Crescent_Nebula___Ngc6888.jpg"  height="200px" onclick="openModal();currentSlide(1)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="../Photos/Ic434___Horsehead_Nebula__lrgb_.jpg" height="200px" onclick="openModal();currentSlide(2)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="../Photos/Ic_405____Flaming_Star_Nebula__hargb_.jpg" height="200px" onclick="openModal();currentSlide(3)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="../Photos/Ldn1235___Vdb149__vdb150.jpg" height="200px" onclick="openModal();currentSlide(4)" class="hover-shadow">
+            </div>
+        </div>
+
+        <!-- The Modal/Lightbox -->
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+                <div class="mySlides">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="../Photos/Crescent_Nebula___Ngc6888.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="../Photos/Ic434___Horsehead_Nebula__lrgb_.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="../Photos/Ic_405____Flaming_Star_Nebula__hargb_.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="../Photos/Ldn1235___Vdb149__vdb150.jpg" style="width:100%">
+                </div>
+
+                <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <!-- Caption text -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <!-- Thumbnail image controls -->
+                <div class="column">
+                    <img class="demo" src="../Photos/Crescent_Nebula___Ngc6888.jpg" onclick="currentSlide(1)" alt="Nature">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="../Photos/Ic434___Horsehead_Nebula__lrgb_.jpg" onclick="currentSlide(2)" alt="Trolltunga">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="../Photos/Ic_405____Flaming_Star_Nebula__hargb_.jpg" onclick="currentSlide(3)" alt="Mountains">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="../Photos/Ldn1235___Vdb149__vdb150.jpg" onclick="currentSlide(4)" alt="Lights">
+                </div>
+            </div>
+        </div>F
+
+
+
+
+    </section>
+
+
+    <footer>&copy; Stamatis Sarris
+        <img src="../photos/insta logo.png" height=16px;>&nbsp;
+        <img src="../photos/FACEBOOK LOGO.png" height=16px;>
+    </footer>
+
+
+
+</body>
+
+</html>
