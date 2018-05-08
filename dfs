@@ -1,0 +1,81 @@
+[33mcommit 2a59ae6d8216bc9c5b1d2ee7c4e2daafda6508b8[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Sheliak <stamcj@hotmail.com>
+Date:   Tue May 8 19:11:55 2018 +0300
+
+    Initial commit
+
+[1mdiff --git a/Photos/Agia triada April 18.jpg b/Photos/Agia triada April 18.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..936faa9[m
+Binary files /dev/null and b/Photos/Agia triada April 18.jpg differ
+[1mdiff --git a/Photos/Crescent_Nebula___Ngc6888.jpg b/Photos/Crescent_Nebula___Ngc6888.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..831e7f5[m
+Binary files /dev/null and b/Photos/Crescent_Nebula___Ngc6888.jpg differ
+[1mdiff --git a/Photos/FACEBOOK LOGO.png b/Photos/FACEBOOK LOGO.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..9b270e2[m
+Binary files /dev/null and b/Photos/FACEBOOK LOGO.png differ
+[1mdiff --git a/Photos/Ic434___Horsehead_Nebula__lrgb_.jpg b/Photos/Ic434___Horsehead_Nebula__lrgb_.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..18e1458[m
+Binary files /dev/null and b/Photos/Ic434___Horsehead_Nebula__lrgb_.jpg differ
+[1mdiff --git a/Photos/Ic_405____Flaming_Star_Nebula__hargb_.jpg b/Photos/Ic_405____Flaming_Star_Nebula__hargb_.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..70de091[m
+Binary files /dev/null and b/Photos/Ic_405____Flaming_Star_Nebula__hargb_.jpg differ
+[1mdiff --git a/Photos/Ldn1235___Vdb149__vdb150.jpg b/Photos/Ldn1235___Vdb149__vdb150.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..8ad4fd0[m
+Binary files /dev/null and b/Photos/Ldn1235___Vdb149__vdb150.jpg differ
+[1mdiff --git a/Photos/M31_Andromeda_Galaxy.png b/Photos/M31_Andromeda_Galaxy.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..193ce06[m
+Binary files /dev/null and b/Photos/M31_Andromeda_Galaxy.png differ
+[1mdiff --git a/Photos/Messier_33___Triangulum_Galaxy.jpg b/Photos/Messier_33___Triangulum_Galaxy.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..1f2893f[m
+Binary files /dev/null and b/Photos/Messier_33___Triangulum_Galaxy.jpg differ
+[1mdiff --git a/Photos/Ngc_1499.png b/Photos/Ngc_1499.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..3823779[m
+Binary files /dev/null and b/Photos/Ngc_1499.png differ
+[1mdiff --git a/Photos/Sadr_Region.jpg b/Photos/Sadr_Region.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..3fdad83[m
+Binary files /dev/null and b/Photos/Sadr_Region.jpg differ
+[1mdiff --git a/Photos/Soul_Nebula___Ic_1848.jpg b/Photos/Soul_Nebula___Ic_1848.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..63b5d12[m
+Binary files /dev/null and b/Photos/Soul_Nebula___Ic_1848.jpg differ
+[1mdiff --git a/Photos/The_Lagoon_Nebula___M8.jpg b/Photos/The_Lagoon_Nebula___M8.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..08c26d2[m
+Binary files /dev/null and b/Photos/The_Lagoon_Nebula___M8.jpg differ
+[1mdiff --git a/Photos/bannerphoto.png b/Photos/bannerphoto.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..b233f0f[m
+Binary files /dev/null and b/Photos/bannerphoto.png differ
+[1mdiff --git a/Photos/image-72e7edcebbbb6a0d3037d48254faefcd851ea71976abd461df5934ef81edcd35-V.jpg b/Photos/image-72e7edcebbbb6a0d3037d48254faefcd851ea71976abd461df5934ef81edcd35-V.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..0ae04bd[m
+Binary files /dev/null and b/Photos/image-72e7edcebbbb6a0d3037d48254faefcd851ea71976abd461df5934ef81edcd35-V.jpg differ
+[1mdiff --git a/Photos/insta logo.png b/Photos/insta logo.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..0cb11ef[m
+Binary files /dev/null and b/Photos/insta logo.png differ
+[1mdiff --git a/Photos/mainphoto.png b/Photos/mainphoto.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..fcbf4e1[m
+Binary files /dev/null and b/Photos/mainphoto.png differ
+[1mdiff --git a/Photos/sheliak.png b/Photos/sheliak.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..2cb7c31[m
+Binary files /dev/null and b/Photos/sheliak.png differ
+[1mdiff --git a/css/about.css b/css/about.css[m
+[1mnew file mode 100644[m
+[1mindex 0000000..d78bee0[m
+[1m--- /dev/null[m
+[1m+++ b/css/about.css[m
+[36m@@ -0,0 +1,5 @@[m
+[32m+[m[32m
