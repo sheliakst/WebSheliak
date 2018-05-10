@@ -1,3 +1,5 @@
+
+     
 .main{
     margin: 0px;
     padding:0px;
@@ -7,8 +9,6 @@
     font-weight: 200;
     font-family: "Source Code Pro Extralight";
 }
-
-
 
 .container {
     width:80%;
@@ -34,7 +34,6 @@ header::after {
     float:left;
     width: 150px;
 }
-
 
 nav {
 
@@ -82,7 +81,6 @@ nav a::before {
     width: 100%;
   }
   
-
   /*mainintro*/
 #introphoto{
     margin-top:20px;
@@ -114,6 +112,7 @@ nav a::before {
     text-align: center;
     font-size: .8em;
   }
+  
 
 
   

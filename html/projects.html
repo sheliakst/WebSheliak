@@ -54,6 +54,10 @@
             diam tellus in nibh.</p>
     </section>
     <div id="space1"></div>
+    <input type="button" value="Refresh Page" onClick="history.go(0)">
+    <br>
+    <br>
+
     <hr>
     <section class="starlog">
         <h1>Star Catalogue</h1>
@@ -62,44 +66,85 @@
 
         <div>
             <input id="showbtn" type="button" name="answer" value="Show Submit Form">&nbsp;&nbsp;
+
             <span>
                 <input id="showfilter" type="button" name="filter" value="Show Filter Form">
                 <br>
             </span>
 
-
             <form id="form">
-                <p>
-                    <b>ID </b>:
-                    <span>
-                        <input id="inID" type="text" name="ID" placeholder="ID">
-                    </span>
-                    <b>Mag</b>:
-                    <span>
-                        <input id="inMag" type="text" name="ID" placeholder="Mag">
-                    </span>
-                    <b>Size</b>:
-                    <span>
-                        <input id="inSize" type="text" name="ID" placeholder="Size">
-                    </span> &nbsp;
-                    <button id="submitgrid" type="button">Add</button>
-                </p>
+                <br>
+                <br>
+                <fieldset>
+                    <legend>Form</legend>
+
+
+                    <p>
+                        <br>
+                        <form id="radio">
+
+                            <input type="radio" class="preset" name="IDtype" value="NGC">NGC
+                            <input class="preset" type="radio" name="IDtype" value="IC">IC
+                            <input class="preset" type="radio" name="IDtype" value="M">Messier
+                            <input class="preset" type="radio" name="IDtype" value="B">B
+                            <input class="preset" type="radio" name="IDtype" value="LBN">LBN
+
+
+                        </form>
+                        <br>
+                        <br>
+
+                        <b>ID </b>:
+
+                        <span>
+                            <input id="inID" type="text" name="ID" placeholder="ID" value="">
+                        </span>
+                        <b>Brightness</b>:
+                        <span>
+                            <input id="inBrightness" type="number" min="-20" max="20" step="0.1" value="0" name="Brightness" placeholder="Brightness">
+                        </span>
+                        <b>Type</b>:
+                        <span>
+                            <input id="inType" list="browsers" name="Type" placeholder="Type">
+                            <datalist id="browsers">
+                                <option value="Dark Nebula">
+                                    <option value="Reflection Nebula">
+                                        <option value="Emission Nebula">
+                                            <option value="Galaxy">
+                                                <option value="Cluster">
+                            </datalist>
+                        </span> &nbsp;
+                        <button id="submitgrid" type="button">Add</button>
+                        <br>
+                        <br>
+                        <button id="resetform" type="button">Reset</button>
+
+                        <br><br>
+                        <p id="logform">Here</p>
+                    
+                    </p>
             </form>
+            </fieldset>
+            <br>
+            <br>
         </div>
 
 
-        <div>
 
 
 
 
-            <div id="filter">
-                <input id="myInput" type="text" placeholder="Search ID">
-                <input id="myInput2" type="text" placeholder="Search ID">
-                <input id="myInput3" type="text" placeholder="Search ID">
+        <div id="filter">
+            <fieldset>
+                <legend>Filter</legend>
 
+                <form>
+                    <input id="myInput" type="text" placeholder="Search ID">
+                    <input id="myInput2" type="text" placeholder="Search ID">
+                    <input id="myInput3" type="text" placeholder="Search ID">
+                </form>
                 <br>
-            </div>
+            </fieldset>
         </div>
 
         <p id="catalog">
@@ -117,16 +162,32 @@
         <h1>Focal Calculator</h1>
 
         <form id="focalconverter">
-           <p>Focal Length:&nbsp; <span><input id="focal" name="focal" type="text" placeholder="Focal Length"></span>
-           &nbsp;Telescope diameter:&nbsp;<span>
-           <input id="diameter" name="diam" type="text" placeholder="Telescope Diameter"></span>
-           <span><button id="calculator" type="button">Calculate</button> </span> <span><button id="reset" type="button">Reset</button> </span> </p>
-            
+            <p>Focal Length:&nbsp;
+                <span>
+                    <input id="focal" name="focal" type="text" placeholder="Focal Length">
+                </span>
+                &nbsp;Telescope diameter:&nbsp;
+                <span>
+                    <input id="diameter" name="diam" type="text" placeholder="Telescope Diameter">
+                </span>
+                <span>
+                    <button id="calculator" type="button">Calculate
+                        <br>
+                </span>
+                <span>
+                    <button id="reset" type="button">Reset
+                        <br>
+                </span>
+            </p>
+
         </form>
 
-        <p>Focal Length is:&nbsp; <span id="focallength" style="color:red;"></span></p> 
+        <p>Focal Length is:&nbsp;
+            <span id="focallength" style="color:red;"></span>
+        </p>
     </section>
     <div id="space3"></div>
+
     <hr>
     <footer>&copy; Stamatis Sarris
         <img src="../photos/insta logo.png" height=16px;>&nbsp;
