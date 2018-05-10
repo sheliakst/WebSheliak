@@ -24,76 +24,87 @@ $(document).ready(function () {
 
     $("#submitgrid").click(function () {
 
-        var valueId = $('#inID  ').val(),
+        var valueId = $('#inID').val(),
             valueBrightness = $('#inBrightness').val(),
             valueType = $('#inType').val();
 
 
-
         var subcoords = { "ID": valueId, "Brightness": valueBrightness, "Type": valueType };
-        if (valueBrightness >= -20 && valueBrightness <= 20) {
-            if (valueType == "Dark Nebula" || valueType == "Reflection Nebula" || valueType == "Emission Nebula" || valueType == "Galaxy" || valueType == "Cluster") {
-                coords.push(subcoords);
-                fillGrid();
+            if (valueBrightness >= -20 && valueBrightness <= 20) {
+                if (valueType == "Dark Nebula" || valueType == "Reflection Nebula" || valueType == "Emission Nebula" || valueType == "Galaxy" || valueType == "Cluster") {
+                    if (valueId.replace(/\D+/g, '') >= 1 && valueId.replace(/\D+/g, '') <= 7480){
+
+                    coords.push(subcoords);
+                    fillGrid();
+                } else { $("#logform").html("Invalid ID") };
+
             } else { $("#logform").html("Invalid Type") };
 
-        } else { $("#logform").html("Invalid Brightness") };
+           } else { $("#logform").html("Invalid Brightness") };
+
+    console.log(valueId.replace(/\D+/g, ''));
 
 
 
 
+
+});
+
+
+
+
+
+//reset form
+$("#resetform").click(function () {
+    $('input[name=ID').val('');
+    $('input[name=Brightness').val('');
+    $('input[name=Type').val('');
+    $('input[name=IDType').attr('checked', false);
+
+
+});
+
+
+//filters
+$("#showfilter").click(function () {
+    $("#filter").toggle();
+
+
+});
+
+$("#myInput").on("keyup", function () {
+   
+    var value = $(this).val();
+   
+    $("#grid").filter(function () {
+        $(this).toggle($(this).text().indexOf(value)>-1)
     });
 
+});
 
-
-
-
-    //reset form
-    $("#resetform").click(function () {
-        $('input[name=ID').val('');
-        $('input[name=Brightness').val('');
-        $('input[name=Type').val('');
-        $('input[name=IDType').attr('checked', false);
-
-
+$("#myInput2").on("keyup", function () {
+    var value = $(this).val();
+    $("#grid").filter(function () {
+        $(this).toggle($(this).text().indexOf(value) > -1)
     });
-
-
-    //filters
-    $("#showfilter").click(function () {
-        $("#filter").toggle();
-
-
+});
+$("#myInput3").on("keyup", function () {
+    var value = $(this).val();
+    $("#grid").filter(function () {
+        $(this).toggle($(this).text().indexOf(value) > -1)
     });
-    $("#myInput").on("keyup", function () {
-        var value = $(this).val();
-        $("#grid").filter(function () {
-            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-        });
-    });
-    $("#myInput2").on("keyup", function () {
-        var value = $(this).val();
-        $("#grid").filter(function () {
-            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-        });
-    });
-    $("#myInput3").on("keyup", function () {
-        var value = $(this).val();
-        $("#grid").filter(function () {
-            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-        });
-    });
+});
 
-    //caclulator
-    $("#calculator").click(function () {
-        calculation();
-    });
+//caclulator
+$("#calculator").click(function () {
+    calculation();
+});
 
-    $("#reset").click(function () {
-        $('input[name=diam').val('');
-        $('input[name=focal').val('');
-        $("#focallength").html(" ");
-    });
+$("#reset").click(function () {
+    $('input[name=diam').val('');
+    $('input[name=focal').val('');
+    $("#focallength").html(" ");
+});
 
 });
 

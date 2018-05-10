@@ -3,10 +3,18 @@
      position: static;
      display: none;
 }
+
+
 ::-webkit-input-placeholder {
     text-align: center;
  }
- 
+        input[type=radio] {
+            height: 10px;
+            width: 10px;
+            margin-left:20px;
+        }
+
+
 
 #showbtn,#submitgrid,#showfilter,#calculator,#reset,#resetform {
     background: rgba(180, 170, 170, 0.233); 
